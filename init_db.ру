@@ -1,0 +1,6 @@
+﻿from db import engine, Base
+from user import User
+from task import Task
+
+# Создание всех таблиц
+Base.metadata.create_all(bind=engine)
